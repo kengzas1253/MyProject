@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HlorongShrine">
+
+    <ImageView
+        android:id="@+id/hlorongshrineView"
+        android:layout_width="276dp"
+        android:layout_height="201dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/hlongrongrine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txhlorong1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="ศาลเจ้าซุ่ยบุ่นต๋อง"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hlorongshrineView" />
+
+    <TextView
+        android:id="@+id/txhlorong2"
+        android:layout_width="375dp"
+        android:layout_height="303dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="ศาลเจ้าซุ่ยบุ่นต๋อง หรือศาลเจ้าหล่อโรง ศาลเจ้าแห่งนี้เกิดจากแนวความคิดของคุณวินัย (จิ้นเบ๋ง) แซ่ส้อ กับกลุ่มม้าทรงตลอดจนศิษย์ของเทพเจ้าองค์ต่าง ๆ ได้คิดการที่จะก่อสร้างศาลเจ้าใหม่ โดยมีพระเฉ่งจุ้ยโจวสู่กงเป็นองค์ประธาน ซึ่งคุณวินัยเป็นม้าทรงของพระโจวสู่กงมาแต่เดิม และได้เริ่มประกอบพิธีกินผักเมื่อวันที่ 1 ค่ำ เดือน 9 ตรงกับวันพฤหัสบดี ที่ 13 ตุลาคม พ.ศ. 2520 "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txhlorong1" />
+    <ImageView
+        android:id="@+id/hlorongshrinebar"
+        android:layout_width="424dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="?attr/actionModeSplitBackground"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/ihlorong1"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:background="@drawable/ic_keyboard_arrow_left_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ihlorong5"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_place_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ihlorong3" />
+
+    <ImageButton
+        android:id="@+id/ihlorong3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_apps_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ihlorong1" />
+
+</android.support.constraint.ConstraintLayout>

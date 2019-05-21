@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NaithuShrine">
+    <ImageView
+        android:id="@+id/naithushrineView"
+        android:layout_width="276dp"
+        android:layout_height="201dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/kathushrine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txnaithu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="ศาลเจ้าในทูเต้าบู้เก้ง "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/naithushrineView" />
+
+    <TextView
+        android:id="@+id/txnaithu2"
+        android:layout_width="375dp"
+        android:layout_height="303dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="ศาลเจ้ากะทู้ หรือ เรียกว่า ศาลเจ้าในทู หรือ ฉ้ายตึง เป็นศาลเจ้าแห่งแรกที่เริ่มเทศกาลถือศีลกินผักของภูเก็ต เป็นศาลเจ้าเก่าแก่ และ ศักดิ์สิทธิ์ เป็นที่เคารพนับถือของพี่น้องชาวภูเก็ต ในอดีตที่ตั้งบริเวณอำเภอกะทู้ จังหวัดภูเก็ต เป็นที่หนึ่งที่อุดมไปด้วย แร่ดีบุก จึงทำให้คนจีนเริ่มหลั่งไหลเข้ามาในบ้านกะทู้มากขึ้น และ นำพาความเชื่อเดิมการนับถือ เทพเจ้า วีรบุรุษ และ บรรพชนมาด้วย จึงทำให้เกิดศาลเจ้ากะทู้เป็นที่ยึดเหนี่ยวจิตใจของชาวบ้าน "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txnaithu1" />
+    <ImageView
+        android:id="@+id/naithubar"
+        android:layout_width="424dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="?attr/actionModeSplitBackground"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/inaithu2"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/ic_keyboard_arrow_right_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/inaithu1"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:background="@drawable/ic_keyboard_arrow_left_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/inaithu5"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_place_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/inaithu2"
+        app:layout_constraintStart_toEndOf="@+id/inaithu3" />
+
+    <ImageButton
+        android:id="@+id/inaithu3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_apps_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inaithu1" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bowlang">
+    <ImageView
+        android:id="@+id/bowlangView"
+        android:layout_width="276dp"
+        android:layout_height="201dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/bowlang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txbowlang1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="ป่าวหล้าง"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bowlangView" />
+
+    <TextView
+        android:id="@+id/tbowlang2"
+        android:layout_width="375dp"
+        android:layout_height="303dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="ป่าวหล้าง เป็นข้าวเหนียวปิ้งไส้มะพร้าวผสมกับกุ้งแห้งป่น และพริกไทย ห่อด้วยใบตอง
+        ม้วนเป็นแท่ง แล้วใช้ไม้กลัดทั้งหัวและท้าย ปิ้งป่าวหล้างด้วยเกรียมนิดๆ ข้าวเหนียวหอมๆ รสชาติไส้ด้านในจะหวานมะพร้าม
+        เค็มกุ้งแห้งป่น และเผ็ดนิดๆ จากพริกไทย นอกจากตลาดที่มีขายแล้ว มีขายที่โรงโกปี้ หรือร้านน้ำชายามเช้า "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txbowlang1" />
+    <ImageView
+        android:id="@+id/bowlangbar"
+        android:layout_width="424dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="?attr/actionModeSplitBackground"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/ibowlang2"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/ic_keyboard_arrow_right_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibowlang1"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:background="@drawable/ic_keyboard_arrow_left_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibowlang5"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_place_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ibowlang2"
+        app:layout_constraintStart_toEndOf="@+id/ibowlang3" />
+
+    <ImageButton
+        android:id="@+id/ibowlang3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_apps_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ibowlang1" />
+
+</android.support.constraint.ConstraintLayout>

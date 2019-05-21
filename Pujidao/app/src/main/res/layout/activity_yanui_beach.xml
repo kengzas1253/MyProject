@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YanuiBeach">
+
+    <ImageView
+        android:id="@+id/yanuiView"
+        android:layout_width="276dp"
+        android:layout_height="201dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/yanui"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txyanui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="หาดยะนุ้ย"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yanuiView" />
+
+    <TextView
+        android:id="@+id/txyanui2"
+        android:layout_width="375dp"
+        android:layout_height="303dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="เป็นอ่าวเล็ก ๆ อยู่ทางทิศเหนือของแหลมพรหมเทพเพียงประมาณ 10 นาที เป็นหาดที่นิยมมาพักผ่อน มีบรรยากาศที่เงียบสงบ บริเวณหาดจะมีแนวชายหาดไม่ยาวมากนัก มีเม็ดทรายค่อนข้างละเอียดแต่ไม่ขาวมาก มีร้านอาหารและเตียงชายหาดไว้บริการ นักท่องเที่ยวส่วนใหญ่นิยมนอนอาบแดด และเล่นน้ำตามแนวหาดเป็นส่วนใหญ่ นอกจากนี้ยังมีบังกะโลขนาดเล็กไว้คอยบริการนักท่องเที่ยว"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txyanui" />
+    <ImageView
+        android:id="@+id/yanuibar"
+        android:layout_width="424dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="?attr/actionModeSplitBackground"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/iyanui1"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:background="@drawable/ic_keyboard_arrow_left_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/iyanui5"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_place_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iyanui3" />
+
+    <ImageButton
+        android:id="@+id/iyanui3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_apps_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iyanui1" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Banprapisai">
+    <ImageView
+        android:id="@+id/BanprapisaiView"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/banprisai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txpisai1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="บ้านพระพิไสยสรรพกิจ"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BanprapisaiView" />
+
+    <TextView
+        android:id="@+id/txpisai2"
+        android:layout_width="375dp"
+        android:layout_height="385dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="พระพิไสยสรรพกิจ (ตันม้าส่าย) เป็นบุตรของหลวงบำรุงจีนประเทศ และเป็นพี่ชายพระพิทักษ์ชินประชา (ตันม้าเสียง)ท่านได้สร้างบ้านพักอาศัยก่ออิฐฉาบปูน 2 ชั้น รูปแบบสถาปัตยกรรมแบบผสมผสานระหว่างตะวันตกและจีนขึ้นมาในปี พ.ศ. 2453 ซึ่งเป็นช่วงเวลาที่กิจการทำเหมืองแร่ดีบุกบนเกาะภูเก็ตเจริญรุ่งเรือง หลังจากพระพิไสยสรรพกิจเสียชีวิตลง บ้านหลังนี้ได้ตกทอดเป็นของลูกหลาน ปัจจุบันครอบครองโดยคุณสมนึก –คุณกรรณิการ์ ตัณฑวิณิช ต่อมาในปี พ.ศ. 2517 มีการบูรณะอาคารซึ่งทำโดยช่างท้องถิ่น มีการเปลี่ยนแปลงรูปแบบให้เรียบง่ายเพื่อความสะดวกในการดูแลรักษา เช่น เปลี่ยนประตูและหน้าต่างเป็นบานไม้แบบเรียบ เปลี่ยนวัสดุมุงหลังคาเป็นกระเบื้องลอน และเปลี่ยนผนังภายในเป็นผนังไม้อัด และมีการต่อเติมอาคารด้านหลังโดยไม่ได้คำนึงถึงเอกลักษณ์เดิม ต่อมาในปี พ.ศ. 2551 มีการบูรณะครั้งที่ 2 "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txpisai1" />
+    <ImageView
+        android:id="@+id/banprapisaibar"
+        android:layout_width="424dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="?attr/actionModeSplitBackground"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/ipsb2"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/ic_keyboard_arrow_right_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ipsb1"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:background="@drawable/ic_keyboard_arrow_left_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ipsb5"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_place_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ipsb2"
+        app:layout_constraintStart_toEndOf="@+id/ipsb3" />
+
+    <ImageButton
+        android:id="@+id/ipsb3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_apps_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ipsb1" />
+</android.support.constraint.ConstraintLayout>

@@ -1,7 +1,11 @@
 package th.ac.psu.phuket.coe.pujidao;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -46,7 +50,50 @@ public class Food extends AppCompatActivity {
         foodList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(Food.this,"List"+position,Toast.LENGTH_SHORT).show();
+                if(position == 0){
+                    Intent Gof1 = new Intent(Food.this,Meehokkian.class);
+                    startActivity(Gof1);
+                }
+                if(position == 1){
+                    Intent Gof2 = new Intent(Food.this,Otaw.class);
+                    startActivity(Gof2);
+                }
+                if(position == 2){
+                    Intent Gof3 = new Intent(Food.this,Meehunbachang.class);
+                    startActivity(Gof3);
+                }
+                if(position == 3){
+                    Intent Gof4 = new Intent(Food.this,Loba.class);
+                    startActivity(Gof4);
+                }
+                if(position == 4){
+                    Intent Gof5 = new Intent(Food.this,Loba.class);
+                    startActivity(Gof5);
+                }
+                if(position == 5){
+                    Intent Gof6 = new Intent(Food.this,Kian.class);
+                    startActivity(Gof6);
+                }
+                if(position == 6){
+                    Intent Gof7 = new Intent(Food.this,Oeaw.class);
+                    startActivity(Gof7);
+                }
+                if(position == 7){
+                    Intent Gof8 = new Intent(Food.this,Bagudtea.class);
+                    startActivity(Gof8);
+                }
+                if(position == 8){
+                    Intent Gof9 = new Intent(Food.this,Bobiesod.class);
+                    startActivity(Gof9);
+                }
+                if(position == 9){
+                    Intent Gof10 = new Intent(Food.this,Huche.class);
+                    startActivity(Gof10);
+                }
+                if(position == 10){
+                    Intent Gof11 = new Intent(Food.this,Namprikkung.class);
+                    startActivity(Gof11);
+                }
             }
         });
     }
@@ -82,5 +129,27 @@ public class Food extends AppCompatActivity {
 
             return view;
         }
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_place,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+
+            case R.id.placeitem1: {
+                Intent Food1 = new Intent(Food.this,HomeActivity.class);
+                startActivity(Food1);
+                return true;
+            }
+
+            default:  return super.onOptionsItemSelected(item);
+        }
+
     }
 }

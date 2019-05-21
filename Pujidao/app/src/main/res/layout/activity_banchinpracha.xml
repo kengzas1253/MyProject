@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Banchinpracha">
+    <ImageView
+        android:id="@+id/BanchinView"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/banchinpracha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txchin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="บ้านชินประชา"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BanchinView" />
+
+    <TextView
+        android:id="@+id/txchin2"
+        android:layout_width="375dp"
+        android:layout_height="303dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="บ้านชินประชา สร้างขึ้นในปี พ.ศ. 2446(ค.ศ.1903) หรือในปลายรัชสมัยรัชกาลที่ 5 โดยพระพิทักษ์ชินประชา(ตันเหนี่ยวยี่) ท่านถือกำเนิดในประเทศจีนมณฑลฮกเกี้ยน รับราชการทหารในตำแหน่ง “บู้เต๊กจงกุน” ต่อมาท่านได้เดินทางมาในประเทศไทยในปี พใศใ2397(ค.ศ. 1854) ได้ประกอบกิจการทำเหมียงแร่ดีบุกที่เกาะภูเก็ต และกิจการค้าชายที่เกาะปีนัง ในนามยี่ห้อ “เหลียนบี้”(ดอกบัว) พระพิทักษ์ชินประชา(ตันม่าเสียง) ถือกำเนิดที่เกาะภูเก็ตในปี พ.ศ.2426(ค.ศ.1883) เมื่ออายุได้ 20 ปี ท่านได้สร้างบ้านหลังนี้ตามแบบ”ชิโน-โปรตุกิส” เป็นหลังแรกในจังหวัดภูเก็ต หรือที่เรียกกันว่า “อังม่อเหลา” เฟอร์นิเจอร์ส่วนใหญ่เป็นมรดกตกทอดจากบรรพบุรุษชาวจีน วัสดุส่วนอื่นของบ้าน ส่วนใหญ่นำเข้ามาจากต่างประเทศ เนื่องจากค้าขายทางเรือผ่านเกาะปีนังมายังภูเก็ต ในสมัยนั้นเฟื่องฟู เช่นรั้วบ้านจากฮอลแลนด์ กระเบื้องปูพื้นจากอิตาลี ปัจจุบันบ้านชินประชามีอายุกว่า 114 ปี และมีลูกหลาน นับเนื่องเป็นรุ่นที่ 4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txchin1" />
+    <ImageView
+        android:id="@+id/banchinbar"
+        android:layout_width="424dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="?attr/actionModeSplitBackground"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/ichb2"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/ic_keyboard_arrow_right_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ichb1"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:background="@drawable/ic_keyboard_arrow_left_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ichb5"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_place_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ichb2"
+        app:layout_constraintStart_toEndOf="@+id/ichb3" />
+
+    <ImageButton
+        android:id="@+id/ichb3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_apps_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ichb1" />
+
+</android.support.constraint.ConstraintLayout>

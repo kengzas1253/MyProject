@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Samkongshrine">
+    <ImageView
+        android:id="@+id/samkongshrineView"
+        android:layout_width="276dp"
+        android:layout_height="201dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/samkongshrine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txsamkong1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="ศาลเจ้าหลิมหู้ไท้สู้"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/samkongshrineView" />
+
+    <TextView
+        android:id="@+id/txsamkong2"
+        android:layout_width="375dp"
+        android:layout_height="303dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="ศาลเจ้าหลิมหู้ไท้สู้ (อ๊ามสามกอง)เป็นอีกหนึ่งศาลเจ้าใหญ่ของจังหวัดภูเก็ต ตั้งอยู่บริเวณชุมชนบ้านสามกอง ศาลเจ้าสามกองนอกเป็นชื่อที่คนท้องถิ่นเรียกกันติดปาก การก่อสร้างศาลเจ้าหลิมฮู้ไท้ซู่ ไม่ปรากฏว่าเริ่มมีขึ้นตั้งแต่ พ.ศ.ใด ทราบแต่ว่า มีผู้มีจิตศรัทธา ชื่อหลวงสุนทรจีนประชา บริจาคที่ดิน ประมาณเกือบหนึ่งไร่ พร้อมทำการสร้างอ๊ามถวายให้ ศาลเจ้าจึงได้รับการพัฒนา จากผู้มีจิตศรัทธาตามไป จากเมื่อร้อยกว่าปีที่แล้วจากศาลเจ้าเล็ก ๆ จึงได้ขยายใหญ่อย่างทุกวันนี้ "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txsamkong1" />
+    <ImageView
+        android:id="@+id/samkongshrinebar"
+        android:layout_width="424dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="?attr/actionModeSplitBackground"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/isamkong2"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/ic_keyboard_arrow_right_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/isamkong1"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:background="@drawable/ic_keyboard_arrow_left_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/isamkong5"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_place_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/isamkong2"
+        app:layout_constraintStart_toEndOf="@+id/isamkong3" />
+
+    <ImageButton
+        android:id="@+id/isamkong3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_apps_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/isamkong1" />
+
+</android.support.constraint.ConstraintLayout>

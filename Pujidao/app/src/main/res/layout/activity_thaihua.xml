@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Thaihua">
+
+    <ImageView
+        android:id="@+id/ThaihuaView"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/taihuamuseum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txth1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="16dp"
+        android:text="พิพิธภัณฑ์ภูเก็ตไทยหัว"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ThaihuaView" />
+
+    <TextView
+        android:id="@+id/txth2"
+        android:layout_width="375dp"
+        android:layout_height="303dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="พิพิธภัณฑ์ภูเก็ตไทยหัวเดิมเป็นโรงเรียนสอนภาษาจีนในจังหวัดภูเก็ต ก่อตั้งเมื่อ พ.ศ. 2454 โดยชาวจีนเพื่อจัดสอนภาษาจีนแบบโบราณ เดิมชื่อโรงเรียนฮั่วบุ๋น ต่อมาเปลี่ยนชื่อโรงเรียนเป็น “โรงเรียนภูเก็ตจุงหัว”แต่ล้มเลิกกิจการและก่อตั้งใหม่เป็น “โรงเรียนภูเก็ตไทยหัว” ปัจจุบันโรงเรียนภ๔เก็ตไทยหัวได้ย้ายไปอยู่บริเวณถนนวิชิตสงครามใน พ.ศ.2538 ซึ่งในส่วนของอาคารโรงเรียนเก่านั้นได้รับการบูรณะและจัดทำเป็นพิพิธภัณฑ์ใน พ.ศ.2553 นอกจากนี้อาหารโรงเรียนภูเก็ตไทยหัวได้รับรางวัลอนุรักษ์ศิลปะดีเด่น ประจำปี 2551 ประเภทอาคารสถาบันและอาคารสาธารณะ อาคารโรงเรียนภูเก็ตไทยหัว เป็นสถาปัตยกรรมแบบนีโอคลาสสิคผสมจีน ตามอย่างของชาวจีนฮกเกี้ยนในรัฐปีนัง ประเทศมาเลเซีย หรือที่เรียกว่า Peranakan Mansion  เป็นแบบอาคารทรงตึก มีพื้นที่ตรงกลางระหว่างตึกเปิดกว้าง และตกแต่งสวนหย่อม ภายนอกอาคารตกแต่งด้วยองค์ประกอบทางสถาปัตยกรรมและลวดลายแบบนีโอคลาสสิค"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txth1" />
+
+    <ImageView
+        android:id="@+id/huabar"
+        android:layout_width="424dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="?attr/actionModeSplitBackground"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/ihb2"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/ic_keyboard_arrow_right_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ihb5"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_place_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ihb2"
+        app:layout_constraintStart_toEndOf="@+id/ihb3" />
+
+    <ImageButton
+        android:id="@+id/ihb3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_apps_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="th.ac.psu.phuket.coe.pujidao">
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -16,7 +15,54 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".JuituiView"></activity>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".BanpraaramView" />
+        <activity android:name=".BanprapisaiView" />
+        <activity android:name=".NewBunte" />
+        <activity android:name=".Samkongshrine" />
+        <activity android:name=".Bangniewshrine" />
+        <activity android:name=".NaithuShrine" />
+        <activity android:name=".Juituishrine" />
+        <activity android:name=".Watchalong" />
+        <activity android:name=".Watpranangsang" />
+        <activity android:name=".Watkathu" />
+        <activity android:name=".HlorongShrine" />
+        <activity android:name=".Watpratong" />
+        <activity android:name=".Watlipon" />
+        <activity android:name=".ThreebeachView" />
+        <activity android:name=".Khaoprayai" />
+        <activity android:name=".Promtepcape" />
+        <activity android:name=".khaokhad" />
+        <activity android:name=".Khaoranghill" />
+        <activity android:name=".YanuiBeach" />
+        <activity android:name=".NaiharnBeach" />
+        <activity android:name=".PatongBeach" />
+        <activity android:name=".Shrine" />
+        <activity android:name=".Temple" />
+        <activity android:name=".Viewpoint" />
+        <activity android:name=".KatanoiBeach" />
+        <activity android:name=".KaronBeach" />
+        <activity android:name=".Beaches" />
+        <activity android:name=".Chaitawkoy" />
+        <activity android:name=".Seaguokoy" />
+        <activity android:name=".Bietaybark" />
+        <activity android:name=".Aiwpung" />
+        <activity android:name=".Koybangka" />
+        <activity android:name=".Koshui" />
+        <activity android:name=".beaheji" />
+        <activity android:name=".Bowlang" />
+        <activity android:name=".Abong" />
+        <activity android:name=".Anggu" />
+        <activity android:name=".Moji" />
+        <activity android:name=".Koytalam" />
+        <activity android:name=".Kiamkoy" />
+        <activity android:name=".Kiakoy" />
+        <activity android:name=".Khawniawheb" />
+        <activity android:name=".NewPage_location" />
+        <activity android:name=".Youjakoy" />
+        <activity android:name=".Hunkoy" />
+        <activity android:name=".Huadkoy" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -30,8 +76,85 @@
             android:value="@string/google_maps_key" />
 
         <activity
+            android:name=".BuntekoyMap"
+            android:label="@string/title_activity_buntekoy_map" />
+        <activity android:name=".Daopaokoy" />
+        <activity android:name=".Banjiankoy" />
+        <activity android:name=".Beatongkoy" />
+        <activity
+            android:name=".BobiesodMap"
+            android:label="@string/title_activity_bobiesod_map" />
+        <activity android:name=".Namprikkung" />
+        <activity android:name=".Huche" />
+        <activity android:name=".Bobiesod" />
+        <activity
+            android:name=".BagudteaMap"
+            android:label="@string/title_activity_bagudtea_map" />
+        <activity android:name=".Bagudtea" />
+        <activity
+            android:name=".OeawMap"
+            android:label="@string/title_activity_oeaw_map" />
+        <activity android:name=".Oeaw" />
+        <activity android:name=".Kian" />
+        <activity
+            android:name=".MoohongMap"
+            android:label="@string/title_activity_moohong_map" />
+        <activity android:name=".Moohong" />
+        <activity
+            android:name=".LobaMap"
+            android:label="@string/title_activity_loba_map" />
+        <activity android:name=".Loba" />
+        <activity
+            android:name=".MeehunbachangMap"
+            android:label="@string/title_activity_meehunbachang_map" />
+        <activity
+            android:name=".OtawMap"
+            android:label="@string/title_activity_otaw_map" />
+        <activity android:name=".PoliceboxView" />
+        <activity android:name=".CharterbankView" />
+        <activity android:name=".ThaihuaView" />
+        <activity android:name=".SangtamView" />
+        <activity
+            android:name=".MeehokkianMap"
+            android:label="@string/title_activity_meehokkian_map" />
+        <activity android:name=".Meehunbachang" />
+        <activity android:name=".Otaw" />
+        <activity android:name=".Meehokkian" />
+        <activity
+            android:name=".PoliceboxMap"
+            android:label="@string/title_activity_policebox_map" />
+        <activity
+            android:name=".CharterbankMap"
+            android:label="@string/title_activity_charterbank_map" />
+        <activity
+            android:name=".BanpraaramMap"
+            android:label="@string/title_activity_banpraaram_map" />
+        <activity
+            android:name=".BanprapitakMap"
+            android:label="@string/title_activity_banprapitak_map" />
+        <activity android:name=".Policebox" />
+        <activity android:name=".Charterbank" />
+        <activity android:name=".Banpraaram" />
+        <activity
+            android:name=".SangtamMap"
+            android:label="@string/title_activity_sangtam_map" />
+        <activity android:name=".Banprapitak" />
+        <activity
+            android:name=".BanprapisaiMap"
+            android:label="@string/title_activity_banprapisai_map" />
+        <activity android:name=".Banprapisai" />
+        <activity
+            android:name=".BanchinprachaMap"
+            android:label="@string/title_activity_banchinpracha_map" />
+        <activity android:name=".Sangtam" />
+        <activity android:name=".Banchinpracha" />
+        <activity
+            android:name=".ThaihuaMap"
+            android:label="@string/title_activity_thaihua_map" />
+        <activity android:name=".Thaihua" />
+        <activity
             android:name=".My_Locattions"
-            android:label="@string/title_activity_my__locattions"></activity>
+            android:label="@string/title_activity_my__locattions" />
         <activity android:name=".Page_location" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 
 public class Page_location extends AppCompatActivity {
 
-    Button bnt1,bnt2;
+    Button bnt1,bnt2,bnt3,bnt4,bnt5,bnt6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,38 @@ public class Page_location extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent Bnt2 = new Intent(Page_location.this,PagePlace.class);
+                startActivity(Bnt2);
+            }
+        });
+        bnt3 = (Button)findViewById(R.id.bnt_view1);
+        bnt3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Bnt3 = new Intent(Page_location.this,Viewpoint.class);
+                startActivity(Bnt3);
+            }
+        });
+        bnt4 = (Button)findViewById(R.id.bnt_beach1);
+        bnt4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Bnt2 = new Intent(Page_location.this,Beaches.class);
+                startActivity(Bnt2);
+            }
+        });
+        bnt5 = (Button)findViewById(R.id.bnt_temple1);
+        bnt5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Bnt2 = new Intent(Page_location.this,Temple.class);
+                startActivity(Bnt2);
+            }
+        });
+        bnt6 = (Button)findViewById(R.id.bnt_shrine1);
+        bnt6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Bnt2 = new Intent(Page_location.this,Shrine.class);
                 startActivity(Bnt2);
             }
         });

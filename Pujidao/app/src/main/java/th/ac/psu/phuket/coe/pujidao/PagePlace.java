@@ -1,13 +1,19 @@
 package th.ac.psu.phuket.coe.pujidao;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class PagePlace extends AppCompatActivity {
     ListView placeList;
@@ -52,7 +58,44 @@ public class PagePlace extends AppCompatActivity {
 
         placeList = (ListView)findViewById(R.id.ListView3);
         CustomAdepter3 customAdepter3 = new CustomAdepter3();
-        placeList.setAdapter(customAdepter3);
+        placeList.setAdapter(customAdepter3);placeList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position == 0){
+                    Intent Gop1 = new Intent(PagePlace.this,Thaihua.class);
+                    startActivity(Gop1);
+                }
+                if(position == 1){
+                    Intent Gop2 = new Intent(PagePlace.this,Banchinpracha.class);
+                    startActivity(Gop2);
+                }
+                if(position == 2){
+                    Intent Gop3 = new Intent(PagePlace.this,Banprapisai.class);
+                    startActivity(Gop3);
+                }
+                if(position == 3){
+                    Intent Gop4 = new Intent(PagePlace.this,Sangtam.class);
+                    startActivity(Gop4);
+                }
+                if(position == 4){
+                    Intent Gop5 = new Intent(PagePlace.this,Banprapitak.class);
+                    startActivity(Gop5);
+                }
+                if(position == 5){
+                    Intent Gop6 = new Intent(PagePlace.this,Banpraaram.class);
+                    startActivity(Gop6);
+                }
+                if(position == 6){
+                    Intent Gop7 = new Intent(PagePlace.this,Charterbank.class);
+                    startActivity(Gop7);
+                }
+                if(position == 7){
+                    Intent Gop8 = new Intent(PagePlace.this,Policebox.class);
+                    startActivity(Gop8);
+                }
+             }
+        });
+
     }
     class CustomAdepter3 extends BaseAdapter{
 
@@ -84,5 +127,28 @@ public class PagePlace extends AppCompatActivity {
             textView_dec3.setText(detailP[i1]);
             return view3;
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_place,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+
+            case R.id.placeitem1: {
+                Intent Bo1 = new Intent(PagePlace.this,HomeActivity.class);
+                startActivity(Bo1);
+                return true;
+            }
+
+            default:  return super.onOptionsItemSelected(item);
+        }
+
     }
 }

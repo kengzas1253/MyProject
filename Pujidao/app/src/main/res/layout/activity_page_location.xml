@@ -13,32 +13,90 @@
         android:layout_height="51dp"
         android:layout_marginStart="131dp"
         android:layout_marginLeft="131dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="110dp"
         android:layout_marginRight="110dp"
-        android:layout_marginBottom="67dp"
         android:text="แผนที่"
         app:layout_constraintBottom_toTopOf="@+id/bnt_mc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/bnt_mc"
         android:layout_width="171dp"
         android:layout_height="57dp"
-        android:layout_marginStart="130dp"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="110dp"
-        android:layout_marginRight="110dp"
-        android:layout_marginBottom="324dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginLeft="138dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginRight="102dp"
         android:text="โบราณสถานในชุมชน"
+        app:layout_constraintBottom_toTopOf="@+id/bnt_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bnt_map" />
+
+    <Button
+        android:id="@+id/bnt_view1"
+        android:layout_width="185dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginLeft="126dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:text="จุดชมวิว"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bnt_mc" />
+
+    <Button
+        android:id="@+id/bnt_beach1"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginLeft="126dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginRight="85dp"
+        android:text="ชายหาด"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bnt_view1" />
+
+    <Button
+        android:id="@+id/bnt_temple1"
+        android:layout_width="195dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginBottom="44dp"
+        android:text="วัดสำคัญในภูเก็ต"
+        app:layout_constraintBottom_toTopOf="@+id/bnt_shrine1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bnt_beach1" />
+
+    <Button
+        android:id="@+id/bnt_shrine1"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="131dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginRight="91dp"
+        android:layout_marginBottom="267dp"
+        android:text="ศาลเจ้า"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bnt_map"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/bnt_temple1" />
 </android.support.constraint.ConstraintLayout>

@@ -84,6 +84,10 @@ public class My_Locattions extends AppCompatActivity implements OnMapReadyCallba
         tpMap.addMarker(new MarkerOptions().position(kawkang3).title("ร้านขายข้าวแกงและข้าวขาหมู"));
         tpMap.moveCamera(CameraUpdateFactory.newLatLng(kawkang3));
 
+        LatLng kawsoi1 = new LatLng(7.901049, 98.352671);
+        tpMap.addMarker(new MarkerOptions().position(kawsoi1).title("ร้านขายข้าวซอยล้านนา"));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(kawsoi1,12),4000,null);
+
 
     }
     @Override

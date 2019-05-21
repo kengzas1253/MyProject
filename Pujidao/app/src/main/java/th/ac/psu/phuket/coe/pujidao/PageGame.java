@@ -30,7 +30,7 @@ public class PageGame extends AppCompatActivity {
         bquiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent BQ = new Intent(PageGame.this,MainActivity.class);
+                Intent BQ = new Intent(PageGame.this,HomeActivity.class);
                 startActivity(BQ);
             }
         });

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sangtam">
+    <ImageView
+        android:id="@+id/SangView"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/armsangdam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txsang1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="ศาลเจ้าแสงธรรม(เต่งก้องต๋อง)"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SangView" />
+
+    <TextView
+        android:id="@+id/txsang2"
+        android:layout_width="375dp"
+        android:layout_height="385dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="เป็นศาลเจ้าเล็ก ๆ แต่ชาวบ้านให้ความนับถือมากมาย ซึ่งศาลเจ้าแห่งนี้มีหลายชื่อเรียกด้วยกัน ไม่ว่าจะเป็นศาลเจ้าเต่งก้องต๋อง หรือศาลเจ้าซิงเจียกอง หรืออ๊ามเตงก่องต๋อง ที่นี่สร้างขึ้นเมื่อปี พ.ศ. 2434 โดยหลวงอำนาจนรารักษ์ (ดันด้วด) เพื่อเป็นที่ประดิษฐานเทพเจ้าจีนที่สายตระกูลนับถือมาแต่เดิม ทั้งนี้ ศาลเจ้าแสงธรรมนั้นได้รับการออกแบบสถาปัตยกรรมตามวัฒนธรรมจีน สง่างามด้วยอาคารที่มีรูปทรงคล้ายเก๋งจีนขนาดเล็ก มีหลังคาปูนปั้นรูปมังกรและตุ๊กตาจีนอันเป็นที่นิยมอย่างมากในมณฑลฮกเกี้ยน สำหรับภายในศาลเจ้านั้นประดับด้วยภาพเขียนลายเส้นสีดำในตารางสี่เหลี่ยมเต็มผนังด้านข้างสองด้าน โดยบรรยายถึงเรื่องราวของตำนาน “ซิยินกุ้ย” ที่มีความเกี่ยวพันกับเทพอ๋องซุนต่ายสาย และในปี พ.ศ. 2540 นั้น ศาลเจ้าแสงธรรมได้รับพระราชทานรางวัลอนุรักษ์ดีเด่นจากสมเด็จพระเทพรัตนราชสุดาฯ สยามบรมราชกุมารี จากการคัดเลือกของสมาคมสถาปนิกสยามในพระบรมราชูปถัมภ์ ต่อมาในปี พ.ศ. 2542 ได้มีการบูรณะศาลเจ้าครั้งใหญ่เพื่อฉลองศาลเจ้าครบรอบ 109 ปี ในปี พ.ศ. 2543"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txsang1" />
+    <ImageView
+        android:id="@+id/sangtambar"
+        android:layout_width="424dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="?attr/actionModeSplitBackground"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/isb2"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/ic_keyboard_arrow_right_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/isb1"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:background="@drawable/ic_keyboard_arrow_left_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/isb5"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_place_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/isb2"
+        app:layout_constraintStart_toEndOf="@+id/isb3" />
+
+    <ImageButton
+        android:id="@+id/isb3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_apps_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/isb1" />
+
+</android.support.constraint.ConstraintLayout>

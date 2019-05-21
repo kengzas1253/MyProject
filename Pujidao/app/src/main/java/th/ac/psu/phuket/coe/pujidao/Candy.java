@@ -1,13 +1,19 @@
 package th.ac.psu.phuket.coe.pujidao;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Candy extends AppCompatActivity {
     ListView cList;
@@ -17,7 +23,7 @@ public class Candy extends AppCompatActivity {
             R.drawable.koytalam,R.drawable.moji,R.drawable.anggu,R.drawable.abong,
             R.drawable.bowlang,R.drawable.beaheyji,R.drawable.koshui,R.drawable.koybangka,
             R.drawable.aiwpung,R.drawable.bietaybark,R.drawable.seaguokoy,R.drawable.chaitawkoy};
-    String[] NameCandy ={"แป๊ะถึ่งโก้ย","บั้นเจียนโก้ย","ต๋าวป่าวโก้ย","ฮวดโก้ย","หุนโก้ย"
+    String[] NameCandy ={"แป๊ะถึ่งโก้ย","บั้นเจียนโก้ย","ต๋าวป่าวอ๊ะโก้ย","ฮวดโก้ย","หุนโก้ย"
             ,"เจี๊ยะโก้ย","ข้าวเหนียวหีบ","กีอาโก้ย","เกี่ยมโก้ย","โก้ยตาล้าม","มอจี๋","อังกู๊","อาโป๊ง"
             ,"ป่าวหล้าง","เบเฮ่จี่","โกสุ้ย","โก้ยเบ่งก๊า","อิ่วปึ่ง","บี้ถ่ายบาก","ซีกั๊วโก้ย","ฉ้ายถาวโก้ย"};
     String[] Dec ={"แปะถึ่งโก้ยคล้ายๆขนมถ้วยฟูหรือขนมน้ำตาลทรายขาวเป็นขนมที่หาทานยาก ตัวขนมสีขาวๆเนื้อฟูด้วยหน้าจะมีสีแดง",
@@ -62,6 +68,97 @@ public class Candy extends AppCompatActivity {
         cList = (ListView)findViewById(R.id.ListView2);
         CustomAdepter2 customAdepter2 = new CustomAdepter2();
         cList.setAdapter(customAdepter2);
+        cList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position == 0){
+                    Intent Goc1 = new Intent(Candy.this,Beatongkoy.class);
+                    startActivity(Goc1);
+                }
+                if(position == 1){
+                    Intent Goc2 = new Intent(Candy.this,Banjiankoy.class);
+                    startActivity(Goc2);
+                }
+                if(position == 2){
+                    Intent Goc3 = new Intent(Candy.this,Daopaokoy.class);
+                    startActivity(Goc3);
+                }
+                if(position == 3){
+                    Intent Goc4 = new Intent(Candy.this,Huadkoy.class);
+                    startActivity(Goc4);
+                }
+                if(position == 4){
+                    Intent Goc5 = new Intent(Candy.this,Hunkoy.class);
+                    startActivity(Goc5);
+                }
+                if(position == 5){
+                    Intent Goc6 = new Intent(Candy.this,Youjakoy.class);
+                    startActivity(Goc6);
+                }
+                if(position == 6){
+                    Intent Goc7 = new Intent(Candy.this,Khawniawheb.class);
+                    startActivity(Goc7);
+                }
+                if(position == 7){
+                    Intent Goc8 = new Intent(Candy.this,Kiakoy.class);
+                    startActivity(Goc8);
+                }
+                if(position == 8){
+                    Intent Goc9 = new Intent(Candy.this,Kiamkoy.class);
+                    startActivity(Goc9);
+                }
+                if(position == 9){
+                    Intent Goc10 = new Intent(Candy.this,Koytalam.class);
+                    startActivity(Goc10);
+                }
+                if(position == 10){
+                    Intent Goc11 = new Intent(Candy.this,Moji.class);
+                    startActivity(Goc11);
+                }
+                if(position == 11){
+                    Intent Goc12 = new Intent(Candy.this,Anggu.class);
+                    startActivity(Goc12);
+                }
+                if(position == 12){
+                    Intent Goc13 = new Intent(Candy.this,Abong.class);
+                    startActivity(Goc13);
+                }
+                if(position == 13){
+                    Intent Goc14 = new Intent(Candy.this,Bowlang.class);
+                    startActivity(Goc14);
+                }
+                if(position == 14){
+                    Intent Goc15 = new Intent(Candy.this,beaheji.class);
+                    startActivity(Goc15);
+                }
+                if(position == 15){
+                    Intent Goc16 = new Intent(Candy.this,Koshui.class);
+                    startActivity(Goc16);
+                }
+                if(position == 16){
+                    Intent Goc17 = new Intent(Candy.this,Koybangka.class);
+                    startActivity(Goc17);
+                }
+                if(position == 17){
+                    Intent Goc18 = new Intent(Candy.this,Aiwpung.class);
+                    startActivity(Goc18);
+                }
+                if(position == 18){
+                    Intent Goc19 = new Intent(Candy.this,Bietaybark.class);
+                    startActivity(Goc19);
+                }
+                if(position == 19){
+                    Intent Goc20 = new Intent(Candy.this,Seaguokoy.class);
+                    startActivity(Goc20);
+                }
+                if(position == 20){
+                    Intent Goc21 = new Intent(Candy.this,Chaitawkoy.class);
+                    startActivity(Goc21);
+                }
+            }
+        });
+
+
     }
     class CustomAdepter2 extends BaseAdapter{
 
@@ -93,6 +190,26 @@ public class Candy extends AppCompatActivity {
             textView_name2.setText(NameCandy[j]);
             textView_dec.setText(Dec[j]);
             return view2;
+        }
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_place,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+
+            case R.id.placeitem1: {
+                Intent Can = new Intent(Candy.this,HomeActivity.class);
+                startActivity(Can);
+                return true;
+            }
+            default:  return super.onOptionsItemSelected(item);
         }
     }
 }

@@ -16,7 +16,7 @@ public class PageCulture extends AppCompatActivity {
         cul1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent CUL1 = new Intent(PageCulture.this,Bunte.class);
+                Intent CUL1 = new Intent(PageCulture.this,NewBunte.class);
                 startActivity(CUL1);
             }
         });
